@@ -35,3 +35,7 @@ build
 
 # OS files
 Thumbs.db
+
+# Local Netlify folder
+.netlify
+.vercel
