@@ -1,0 +1,378 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== HEADER NAVIGATION ===== */
+.header {
+    padding: 6px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 20px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-link {
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.apps-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apps-button:hover {
+    background-color: rgba(60, 64, 67, 0.08);
+}
+
+.apps-icon {
+    width: 20px;
+    height: 20px;
+    fill: #5f6368;
+}
+
+.signin-button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 9px 23px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.signin-button:hover {
+    background-color: #1765cc;
+    box-shadow: 0 1px 2px 0 rgba(66, 133, 244, 0.3),
+                0 1px 3px 1px rgba(66, 133, 244, 0.15);
+}
+
+/* ===== MAIN CONTENT ===== */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+/* ===== GOOGLE LOGO ===== */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.google-logo {
+    width: 272px;
+    height: 92px;
+}
+
+/* ===== SEARCH BAR ===== */
+.search-container {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 584px;
+    padding: 0 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 5px 8px 5px 14px;
+    height: 46px;
+    transition: box-shadow 0.2s;
+    background-color: white;
+}
+
+.search-bar:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.search-bar:focus-within {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    fill: #9aa0a6;
+    margin-right: 13px;
+    flex-shrink: 0;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    padding: 0;
+    color: #222;
+}
+
+.voice-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+/* ===== SEARCH BUTTONS ===== */
+.button-container {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.search-button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: Arial, sans-serif;
+}
+
+.search-button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+/* ===== LANGUAGE OPTIONS ===== */
+.language-container {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #222;
+    padding: 0 20px;
+}
+
+.language-link {
+    color: #1a0dab;
+    text-decoration: none;
+    padding: 0 3px;
+}
+
+.language-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #f2f2f2;
+    margin-top: auto;
+}
+
+.footer-country {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    min-height: 42px;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    gap: 27px;
+    padding: 15px 0;
+}
+
+.footer-link {
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .nav {
+        padding: 6px 10px;
+    }
+
+    .nav-left,
+    .nav-right {
+        gap: 10px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .signin-button {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .main {
+        padding-top: 60px;
+    }
+
+    .google-logo {
+        width: 200px;
+        height: 68px;
+    }
+
+    .search-container {
+        max-width: 90%;
+    }
+
+    .button-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search-button {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .footer-left,
+    .footer-right {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-country {
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-link {
+        display: none;
+    }
+
+    .apps-button {
+        padding: 6px;
+    }
+
+    .signin-button {
+        padding: 7px 14px;
+    }
+
+    .google-logo {
+        width: 160px;
+        height: 54px;
+    }
+
+    .main {
+        padding-top: 40px;
+    }
+
+    .search-bar {
+        height: 44px;
+    }
+
+    .button-container {
+        margin-top: 20px;
+    }
+
+    .language-container {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        gap: 12px;
+        font-size: 12px;
+    }
+}
+
+/* ===== ACCESSIBILITY & INTERACTIONS ===== */
+button:focus,
+input:focus,
+a:focus {
+    outline: 2px solid #4285f4;
+    outline-offset: 2px;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
