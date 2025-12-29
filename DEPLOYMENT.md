@@ -66,6 +66,14 @@ Both platforms use the following configuration:
 - **Output Directory**: `dist`
 - **Node Version**: Latest (auto-detected)
 
+The project includes four sub-projects:
+- **Google Clone** (`/google-clone/`) - Google homepage recreation
+- **Daily Dribble** (`/daily-dribble/`) - Soccer newsletter signup page  
+- **Web Action Hero** (`/web-action-hero/`) - Hero section with gradient effects
+- **Birthday GIFt** (`/birthday-gift/`) - Interactive birthday card with animated GIFs
+
+All pages are properly configured in `vite.config.js` for multi-page builds.
+
 ---
 
 ## 🔧 Custom Domain
