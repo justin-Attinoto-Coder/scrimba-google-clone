@@ -11,6 +11,7 @@ export default defineConfig({
 				'daily-dribble': resolve(__dirname, 'daily-dribble/index.html'),
 				'web-action-hero': resolve(__dirname, 'web-action-hero/index.html'),
 				'birthday-gift': resolve(__dirname, 'birthday-gift/index.html'),
+				'digital-business-card': resolve(__dirname, 'digital-business-card/index.html'),
 				'404': resolve(__dirname, '404.html')
 			}
 		},
